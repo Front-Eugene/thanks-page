@@ -242,7 +242,7 @@
                 <p>новая цена</p>
             </div>
         </div>
-        <a href="#tg-form">
+        <a href="#tg-form" class="btn-1">
             <button>заказать</button>
         </a>
     </div>
@@ -264,7 +264,7 @@
                 <p>новая цена</p>
             </div>
         </div>
-        <a href="#tg-form">
+        <a href="#tg-form" class="btn-2">
             <button>заказать</button>
         </a>
     </div>
@@ -286,8 +286,8 @@
                 <p>новая цена</p>
             </div>
         </div>
-        <a href="#tg-form">
-            <button>заказать</button>
+        <a href="#tg-form" class="btn-3">
+            <button >заказать</button>
         </a>
     </div>
 
@@ -308,7 +308,7 @@
                 <p>новая цена</p>
             </div>
         </div>
-        <a href="#tg-form">
+        <a href="#tg-form" class="btn-4">
             <button>заказать</button>
         </a>
     </div>
@@ -330,7 +330,7 @@
                 <p>новая цена</p>
             </div>
         </div>
-        <a href="#tg-form">
+        <a href="#tg-form" class="btn-5">
             <button>заказать</button>
         </a>
     </div>
@@ -395,7 +395,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js?ver=1.0.0"
         id="tgsend-js"></script>
 
-
     <script>
         const TOKEN = "7443631183:AAH56DuP6IBirXeV-fNEKwYM-m8g2OPTAYA",
             CHAT_ID = "-1002181220204",
@@ -440,6 +439,37 @@
             input.addEventListener("keydown", mask, false);
 
         });
+
+        let btn1 = document.querySelector('.btn-1'),
+                btn2 = document.querySelector('.btn-2'),
+                btn3 = document.querySelector('.btn-3'),
+                btn4 = document.querySelector('.btn-4'),
+                btn5 = document.querySelector('.btn-5');
+
+            btn1.addEventListener('click', function() {
+                // Set the select element value for button 1
+                select.value = "НАУШНИКИ M10";
+            });
+
+            btn2.addEventListener('click', function() {
+                // Set the select element value for button 1
+                select.value = "НАУШНИКИ M20PRO";
+            });
+
+            btn3.addEventListener('click', function() {
+                // Set the select element value for button 1
+                select.value = "НАУШНИКИ M90";
+            });
+
+            btn4.addEventListener('click', function() {
+                // Set the select element value for button 1
+                select.value = "МОЩНЫЙ POWERBANK";
+            });
+
+            btn5.addEventListener('click', function() {
+                // Set the select element value for button 1
+                select.value = "РЕГИСТРАТОР ЗЕРКАЛО";
+            });
 
         phoneInput.addEventListener('keydown', function (event) {
             if (event.key.match(/[a-zа-я]/i) && event.key !== 'Backspace') {
